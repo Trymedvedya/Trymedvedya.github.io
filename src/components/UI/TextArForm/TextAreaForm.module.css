@@ -1,0 +1,7 @@
+.TextAreaForm {
+    border-radius: 8px;
+    border: dotted black 1px;
+    resize: none;
+    width: 50%;
+    height: 15vh;
+}
