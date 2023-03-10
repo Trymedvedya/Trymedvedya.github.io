@@ -7,7 +7,7 @@ import TextAreaForm from '../UI/TextArForm/TextAreaForm'
 import axios from 'axios';
 
 
-// 4h 23m 14s 75  + 1h 12m 02s 90
+
 
 const ModalWindowComp = ({ visible, setVisible }) => {
 
