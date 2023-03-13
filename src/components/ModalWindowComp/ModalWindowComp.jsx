@@ -31,7 +31,7 @@ const ModalWindowComp = ({ visible, setVisible }) => {
             tel: value.tel.replace(/[()-]/g, ''),
             message: value.message
         };
-
+        try{
         axios.post('https://jsonplaceholder.typicode.com/posts', { formData })
             .then(res => {
                 const { name, tel, message } = res.data.formData;
@@ -42,6 +42,7 @@ const ModalWindowComp = ({ visible, setVisible }) => {
                 console.log(res);
                 console.log(res.data);
             })
+        }catch(e){alert(e)}
         setValue({ name: '', tel: '', message: '' })
     }
     return (

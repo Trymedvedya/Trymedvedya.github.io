@@ -15,7 +15,6 @@ const ModalWindow = ({ children, visible, setVisible }) => {
 
         <div>
             <div className={rootCl.join(' ')} onClick={() => setVisible(false)}>
-
                 <div className={classes.insideModal} onClick={(event) => event.stopPropagation()}>
                     {children}
                 </div>
